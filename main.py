@@ -7,6 +7,11 @@ class TreeNode:
         self.right = None
 
 class ArrayTree:
+    """
+    Constructs a binary tree from an array using BFS 
+    and returns the head node
+    """
+    
     def __init__(self, arr):
         self.arr = arr
         self.head = None
