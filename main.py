@@ -27,10 +27,10 @@ class ArrayTree:
                 temp = dq.popleft()
             
             if temp and temp.val:
-                temp.left = TreeNode(arr[i])
+                temp.left = TreeNode(arr[i]) if arr[i] else None
                 dq.append(temp.left)
                 if i + 1 < len(arr):
-                    temp.right = TreeNode(arr[i+1])
+                    temp.right = TreeNode(arr[i+1]) if arr[i+1] else None
                     dq.append(temp.right)
 
         return head
